@@ -1,10 +1,45 @@
-body{
-    background-color: brown;
-}
-.card{
-    background-color: blue;
-    margin-left: auto;
-    margin-right: auto;
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
     text-align: center;
-    padding: 10px;
-}
+    width: min-content;
+    margin: auto;
+    padding: 1rem;    
+    margin-top: 15%;
+    background-color: #651e3e;
+    height: 20rem;
+    width: 50%;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 12px 24px 0 rgba(63, 56, 56, 0.2);
+  }
+  body{
+      text-align: center;
+      background-color: #011f4b ;
+      font-family: 'Lobster', cursive;
+  }
+  #name{
+      background-color: #851e3e;
+      color: #dec3c3;
+  }
+  #temperature{
+      background-color: #651e3e;
+      color: #63ace5;
+  }
+  #weather{
+      background-color:  #851e3e;
+      color: #dec3c3;
+  }
+  footer{
+      background-color: #6497b1;
+      padding: 1rem;
+      border-radius: 1rem;
+  }
+  footer a{
+      text-decoration: none;
+      font-weight: bolder;
+
+  }
