@@ -11,7 +11,7 @@ function UpdateUrl(inputcity)
     return serverUrl + "?" + "q=" + inputcity + "&"+"appid="+ key;
 }
 function ErrorHandler(error){
-    alert("error happened")
+    alert("couldn't get details. Check for spelling error.")
 }
 function ClickHandler(){
     var inputcity = cityName.value;
@@ -20,7 +20,7 @@ function ClickHandler(){
     .then(json =>{
         console.log(json)
         Name.innerHTML = "AREA : "+ json['name'];
-        Temp.innerHTML = "TEMP : " + (parseInt(json['main']['temp']) - 273.15);
+        Temp.innerHTML = "TEMP : " + (parseInt(json['main']['temp']) - 273) + "°C";
         weather.innerHTML = "WEATHER : "+json['weather'][0]['description'];
         var iconUrl = "http://openweathermap.org/img/wn/"+ json['weather'][0]['icon']+"@2x.png "
         icon.src = iconUrl;

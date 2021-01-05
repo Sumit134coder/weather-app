@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(240, 210, 210, 0.2);
     transition: 0.3s;
     text-align: center;
     width: min-content;
@@ -10,13 +11,35 @@
     margin-bottom: 2%;
     border-radius: 2rem;
     background-color: #651e3e;
-    height: 20rem;
+    height: 25rem;
     width: 50%;
+  }
+  h1,h2{
+      font-family: 'Dancing Script', cursive;
+      color: #ffbbee;
+  }
+  span{
+      font-family: 'Courier New', Courier, monospace;
+      color: #fe9c8f;
+
+  }
+  button{
+      border-radius: 1rem;
+      box-shadow: #dec3c3;
+      padding: 10px;
+      margin-top: 10px;
+      background-color: #637074;
+      font-weight: 500;
+  }
+
+  input{
+      border-radius: 10px;
+      text-align: center;
   }
   
   /* On mouse-over, add a deeper shadow */
   .card:hover {
-    box-shadow: 0 12px 24px 0 rgba(63, 56, 56, 0.2);
+    box-shadow: 0 12px 24px 0 rgba(223, 203, 203, 0.801);
   }
   body{
       text-align: center;
@@ -26,14 +49,23 @@
   #name{
       background-color: #851e3e;
       color: #dec3c3;
+      margin-top: 10px;
+      border-radius: 10px;
+
   }
   #temperature{
       background-color: #651e3e;
       color: #63ace5;
+      margin-top: 10px;
+      border-radius: 10px;
+
+
   }
   #weather{
       background-color:  #851e3e;
       color: #dec3c3;
+      margin-top: 10px;
+      border-radius: 10px;
   }
   footer{
       background-color: #6497b1;
@@ -43,5 +75,6 @@
   footer a{
       text-decoration: none;
       font-weight: bolder;
+      width: min-content;
 
   }
