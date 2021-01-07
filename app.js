@@ -11,7 +11,7 @@ function UpdateUrl(inputcity)
     return serverUrl + "?" + "q=" + inputcity + "&"+"appid="+ key;
 }
 function ErrorHandler(error){
-    alert("couldn't get details. Check for spelling error.")
+    Name.innerHTML = "Enter a valid address or check for spelling error"
 }
 function ClickHandler(){
     var inputcity = cityName.value;
